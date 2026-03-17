@@ -1,0 +1,127 @@
+{
+  "version": "0.1.0",
+  "description": "Curated gene sets for the hallmarks of aging (López-Otín 2023). Sources: MSigDB, CellAge (HAGR), manual curation from key reviews.",
+  "hallmarks": {
+    "cellular_senescence": {
+      "description": "Genes associated with cellular senescence and the senescence-associated secretory phenotype (SASP)",
+      "genes": [
+        "CDKN2A", "CDKN1A", "TP53", "RB1", "CDKN2B",
+        "GLB1", "SERPINE1", "IL6", "IL8", "CXCL1",
+        "CXCL2", "MMP1", "MMP3", "MMP9", "IGFBP7",
+        "IGFBP3", "CCL2", "IL1A", "IL1B", "TGFB1",
+        "LMNB1", "HMGA1", "HMGA2", "CCND1", "BMI1"
+      ],
+      "sources": ["MSigDB:FRIDMAN_SENESCENCE_UP", "CellAge", "PMID:29235474"]
+    },
+    "telomere_attrition": {
+      "description": "Genes involved in telomere maintenance, shelterin complex, and telomerase",
+      "genes": [
+        "TERT", "TERC", "DKC1", "TINF2", "POT1",
+        "TPP1", "TRF1", "TRF2", "RAP1", "RTEL1",
+        "CTC1", "STN1", "TEN1", "TNKS", "TNKS2",
+        "PINX1", "NAF1", "NHP2", "NOP10", "GAR1",
+        "WRAP53"
+      ],
+      "sources": ["MSigDB:KEGG_TELOMERE_MAINTENANCE", "PMID:22426080"]
+    },
+    "epigenetic_alterations": {
+      "description": "Genes involved in age-associated epigenetic changes: DNA methylation, histone modifications, chromatin remodeling",
+      "genes": [
+        "DNMT1", "DNMT3A", "DNMT3B", "TET1", "TET2",
+        "TET3", "HDAC1", "HDAC2", "HDAC3", "SIRT1",
+        "SIRT6", "SIRT7", "KAT2A", "KAT2B", "EP300",
+        "CREBBP", "EZH2", "KDM6A", "KDM6B", "SUV39H1",
+        "SETDB1", "LMNB1", "LMNA", "HP1", "CBX5"
+      ],
+      "sources": ["PMID:23063602", "PMID:34043943"]
+    },
+    "mitochondrial_dysfunction": {
+      "description": "Genes involved in mitochondrial function, biogenesis, and age-associated mitochondrial decline",
+      "genes": [
+        "PPARGC1A", "TFAM", "NRF1", "POLG", "POLG2",
+        "MT-CO1", "MT-CO2", "MT-ND1", "MT-ND4", "MT-ATP6",
+        "SOD2", "CAT", "GPX1", "PINK1", "PRKN",
+        "MFN1", "MFN2", "DRP1", "OPA1", "SIRT3",
+        "UCP2", "CYCS", "NDUFS1", "SDHA"
+      ],
+      "sources": ["MSigDB:KEGG_OXIDATIVE_PHOSPHORYLATION", "PMID:24150804"]
+    },
+    "loss_of_proteostasis": {
+      "description": "Genes involved in protein quality control, chaperones, autophagy, and proteasome function",
+      "genes": [
+        "HSPA1A", "HSPA1B", "HSP90AA1", "HSPA8", "DNAJB1",
+        "ATG5", "ATG7", "ATG12", "BECN1", "MAP1LC3B",
+        "SQSTM1", "LAMP2", "TFEB", "PSMD1", "PSMD2",
+        "PSMB5", "UBB", "UBC", "HSPA5", "DDIT3",
+        "ATF4", "ATF6", "ERN1", "EIF2AK3"
+      ],
+      "sources": ["MSigDB:KEGG_PROTEASOME", "MSigDB:KEGG_REGULATION_OF_AUTOPHAGY", "PMID:31801200"]
+    },
+    "deregulated_nutrient_sensing": {
+      "description": "Genes in mTOR, AMPK, insulin/IGF-1, and sirtuin nutrient sensing pathways",
+      "genes": [
+        "MTOR", "RPTOR", "RICTOR", "RPS6KB1", "EIF4EBP1",
+        "PRKAA1", "PRKAA2", "STK11", "TSC1", "TSC2",
+        "IGF1", "IGF1R", "INSR", "IRS1", "IRS2",
+        "AKT1", "FOXO1", "FOXO3", "SIRT1", "SIRT3",
+        "SIRT6", "GCN2", "ATF4", "SESN2"
+      ],
+      "sources": ["MSigDB:KEGG_MTOR_SIGNALING_PATHWAY", "PMID:22101730"]
+    },
+    "genomic_instability": {
+      "description": "Genes involved in DNA damage response, repair pathways, and genome maintenance",
+      "genes": [
+        "ATM", "ATR", "CHEK1", "CHEK2", "TP53",
+        "BRCA1", "BRCA2", "RAD51", "XRCC1", "PARP1",
+        "ERCC1", "XPA", "XPC", "MLH1", "MSH2",
+        "MSH6", "MGMT", "APEX1", "OGG1", "NEIL1",
+        "H2AX", "MDC1", "RNF168", "53BP1"
+      ],
+      "sources": ["MSigDB:KEGG_DNA_REPAIR", "PMID:23877077"]
+    },
+    "stem_cell_exhaustion": {
+      "description": "Genes associated with stem cell self-renewal, quiescence, and age-related stem cell decline",
+      "genes": [
+        "NANOG", "POU5F1", "SOX2", "KLF4", "BMI1",
+        "TERT", "WNT3A", "CTNNB1", "NOTCH1", "HES1",
+        "CDKN2A", "CDKN1A", "TP53", "FOXO3", "SIRT1",
+        "PTEN", "LGR5", "AXIN2", "ALDH1A1", "THY1",
+        "CD34", "KIT"
+      ],
+      "sources": ["PMID:25030175", "CellAge"]
+    },
+    "altered_intercellular_communication": {
+      "description": "Genes involved in age-associated changes in paracrine signaling, inflammation, and tissue crosstalk",
+      "genes": [
+        "NFKB1", "RELA", "TNF", "IL6", "IL1B",
+        "CXCL8", "CCL2", "TGFB1", "TGFB2", "GDF11",
+        "GDF15", "IFNG", "IL10", "STAT3", "JAK1",
+        "JAK2", "NOTCH1", "WNT3A", "CTNNB1", "GHR",
+        "IGF1"
+      ],
+      "sources": ["PMID:34043943", "PMID:29235474"]
+    },
+    "chronic_inflammation": {
+      "description": "Genes driving inflammaging — sterile chronic low-grade inflammation associated with aging",
+      "genes": [
+        "NFKB1", "RELA", "TNF", "IL6", "IL1B",
+        "IL18", "NLRP3", "CASP1", "PYCARD", "CXCL8",
+        "CCL2", "CCL5", "CRP", "SAA1", "IFNG",
+        "TLR4", "MYD88", "IRAK1", "TRAF6", "STING1",
+        "CGAS", "IL1R1", "HMGB1"
+      ],
+      "sources": ["PMID:31806905", "PMID:31801200"]
+    },
+    "disabled_macroautophagy": {
+      "description": "Genes involved in macroautophagy — the major cellular self-cleaning process that declines with age",
+      "genes": [
+        "ATG5", "ATG7", "ATG12", "ATG16L1", "BECN1",
+        "MAP1LC3B", "MAP1LC3A", "SQSTM1", "NBR1", "OPTN",
+        "LAMP1", "LAMP2", "TFEB", "ULK1", "ULK2",
+        "PIK3C3", "AMBRA1", "VPS34", "WIPI2", "ATG14",
+        "ATG9A", "GABARAP", "GABARAPL2"
+      ],
+      "sources": ["MSigDB:KEGG_REGULATION_OF_AUTOPHAGY", "PMID:25654077"]
+    }
+  }
+}

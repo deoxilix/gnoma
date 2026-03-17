@@ -1,0 +1,13 @@
+# Preprocessing pipeline configuration
+min_genes_per_cell: 200
+max_genes_per_cell: 8000
+max_pct_mito: 20.0
+min_cells_per_gene: 10
+target_sum: 10000.0
+n_top_genes: 4000
+hvg_flavor: seurat_v3
+n_pcs: 50
+n_neighbors: 15
+val_fraction: 0.15
+test_fraction: 0.15
+split_seed: 42

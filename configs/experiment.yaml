@@ -1,0 +1,29 @@
+# Top-level experiment configuration
+defaults:
+  - preprocess: preprocess
+
+project_name: gnoma
+experiment_name: ???  # must be set per run
+
+data:
+  organism: "Homo sapiens"
+  tissue: "blood"
+  cell_type: null
+  census_version: "stable"
+
+encoder:
+  latent_dim: 128
+  n_layers: 2
+  n_hidden: 256
+
+training:
+  max_epochs: 200
+  batch_size: 256
+  learning_rate: 1e-3
+  early_stopping: true
+  early_stopping_patience: 10
+
+wandb:
+  project: gnoma
+  entity: null
+  tags: []

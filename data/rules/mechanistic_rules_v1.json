@@ -1,0 +1,281 @@
+{
+  "rules": [
+    {
+      "id": "RULE-001",
+      "name": "mTOR inhibition reduces senescence",
+      "description": "mTOR inhibition (rapamycin) promotes autophagy and reduces SASP",
+      "intervention_match": {
+        "target_gene": "MTOR"
+      },
+      "hallmark_deltas": {
+        "cellular_senescence": -0.3,
+        "disabled_macroautophagy": -0.4,
+        "deregulated_nutrient_sensing": -0.3,
+        "loss_of_proteostasis": -0.2
+      },
+      "confidence": 0.9,
+      "sources": [
+        "PMID:19587680",
+        "PMID:24048020"
+      ]
+    },
+    {
+      "id": "RULE-002",
+      "name": "AMPK activation mimics caloric restriction",
+      "description": "AMPK activation (metformin) improves nutrient sensing and autophagy",
+      "intervention_match": {
+        "target_gene": "PRKAA1"
+      },
+      "hallmark_deltas": {
+        "deregulated_nutrient_sensing": -0.3,
+        "disabled_macroautophagy": -0.3,
+        "mitochondrial_dysfunction": -0.2,
+        "chronic_inflammation": -0.15
+      },
+      "confidence": 0.8,
+      "sources": [
+        "PMID:24931903"
+      ]
+    },
+    {
+      "id": "RULE-003",
+      "name": "NAD+ restoration improves mitochondrial function",
+      "description": "NAD+ precursors (NMN/NR) restore sirtuin activity and mitochondrial health",
+      "intervention_match": {
+        "type": "metabolic"
+      },
+      "hallmark_deltas": {
+        "mitochondrial_dysfunction": -0.3,
+        "deregulated_nutrient_sensing": -0.2,
+        "epigenetic_alterations": -0.1
+      },
+      "confidence": 0.7,
+      "sources": [
+        "PMID:27127236"
+      ]
+    },
+    {
+      "id": "RULE-004",
+      "name": "Senolytics clear senescent cells",
+      "description": "Senolytic compounds (D+Q, Fisetin, Navitoclax) selectively kill senescent cells",
+      "intervention_match": {
+        "target_pathway": "Senescence / SASP"
+      },
+      "hallmark_deltas": {
+        "cellular_senescence": -0.5,
+        "chronic_inflammation": -0.3,
+        "altered_intercellular_communication": -0.2,
+        "stem_cell_exhaustion": -0.15
+      },
+      "confidence": 0.85,
+      "sources": [
+        "PMID:25754370",
+        "PMID:30048340"
+      ]
+    },
+    {
+      "id": "RULE-005",
+      "name": "Partial epigenetic reprogramming reverses aging",
+      "description": "OSKM/OSK resets epigenetic clocks and hallmark scores toward youthful state",
+      "intervention_match": {
+        "type": "reprogramming_factor"
+      },
+      "hallmark_deltas": {
+        "epigenetic_alterations": -0.5,
+        "cellular_senescence": -0.3,
+        "telomere_attrition": -0.2,
+        "stem_cell_exhaustion": -0.3,
+        "loss_of_proteostasis": -0.1
+      },
+      "confidence": 0.75,
+      "sources": [
+        "PMID:27984723",
+        "PMID:33268865"
+      ]
+    },
+    {
+      "id": "RULE-006",
+      "name": "SIRT6 overexpression improves genomic stability",
+      "description": "SIRT6 promotes DNA repair, suppresses NF-\u03baB inflammation, maintains telomeres",
+      "intervention_match": {
+        "target_gene": "SIRT6"
+      },
+      "hallmark_deltas": {
+        "genomic_instability": -0.3,
+        "chronic_inflammation": -0.2,
+        "telomere_attrition": -0.2,
+        "epigenetic_alterations": -0.15
+      },
+      "confidence": 0.8,
+      "sources": [
+        "PMID:22367546"
+      ]
+    },
+    {
+      "id": "RULE-007",
+      "name": "Telomerase extends telomeres",
+      "description": "TERT overexpression lengthens telomeres and delays replicative senescence",
+      "intervention_match": {
+        "target_gene": "TERT"
+      },
+      "hallmark_deltas": {
+        "telomere_attrition": -0.5,
+        "cellular_senescence": -0.2,
+        "stem_cell_exhaustion": -0.2
+      },
+      "confidence": 0.8,
+      "sources": [
+        "PMID:22585399"
+      ]
+    },
+    {
+      "id": "RULE-008",
+      "name": "Spermidine induces autophagy",
+      "description": "Spermidine promotes autophagy via eIF5A hypusination and TFEB activation",
+      "intervention_match": {
+        "id": "INT-010"
+      },
+      "hallmark_deltas": {
+        "disabled_macroautophagy": -0.4,
+        "loss_of_proteostasis": -0.3,
+        "mitochondrial_dysfunction": -0.15
+      },
+      "confidence": 0.75,
+      "sources": [
+        "PMID:19801985"
+      ]
+    },
+    {
+      "id": "RULE-009",
+      "name": "FOXO3 activation improves stress resistance",
+      "description": "FOXO3 activates autophagy, DNA repair, and antioxidant programs",
+      "intervention_match": {
+        "target_gene": "FOXO3"
+      },
+      "hallmark_deltas": {
+        "genomic_instability": -0.2,
+        "disabled_macroautophagy": -0.3,
+        "loss_of_proteostasis": -0.2,
+        "deregulated_nutrient_sensing": -0.15
+      },
+      "confidence": 0.7,
+      "sources": [
+        "PMID:18765803"
+      ]
+    },
+    {
+      "id": "RULE-010",
+      "name": "Klotho suppresses aging pathways",
+      "description": "Klotho inhibits insulin/IGF-1 signaling, reduces oxidative stress",
+      "intervention_match": {
+        "target_gene": "KL"
+      },
+      "hallmark_deltas": {
+        "deregulated_nutrient_sensing": -0.3,
+        "chronic_inflammation": -0.2,
+        "mitochondrial_dysfunction": -0.15,
+        "altered_intercellular_communication": -0.2
+      },
+      "confidence": 0.75,
+      "sources": [
+        "PMID:15731200"
+      ]
+    },
+    {
+      "id": "RULE-011",
+      "name": "NRF2 activation reduces oxidative damage",
+      "description": "NRF2/KEAP1 pathway activation improves antioxidant defense and proteostasis",
+      "intervention_match": {
+        "target_gene": "NFE2L2"
+      },
+      "hallmark_deltas": {
+        "mitochondrial_dysfunction": -0.2,
+        "loss_of_proteostasis": -0.2,
+        "genomic_instability": -0.15
+      },
+      "confidence": 0.7,
+      "sources": [
+        "PMID:24299543"
+      ]
+    },
+    {
+      "id": "RULE-012",
+      "name": "HDAC inhibition opens chromatin",
+      "description": "HDAC inhibitors increase histone acetylation, potentially rejuvenating epigenetic state",
+      "intervention_match": {
+        "type": "epigenetic"
+      },
+      "hallmark_deltas": {
+        "epigenetic_alterations": -0.2
+      },
+      "confidence": 0.5,
+      "sources": [
+        "PMID:17182790"
+      ]
+    },
+    {
+      "id": "RULE-013",
+      "name": "p16 knockdown \u2014 senescence bypass with cancer risk",
+      "description": "Loss of p16 reduces senescence but is oncogenic",
+      "intervention_match": {
+        "target_gene": "CDKN2A"
+      },
+      "hallmark_deltas": {
+        "cellular_senescence": -0.5,
+        "genomic_instability": 0.4
+      },
+      "confidence": 0.9,
+      "sources": [
+        "PMID:22048312"
+      ]
+    },
+    {
+      "id": "RULE-014",
+      "name": "p53 knockdown \u2014 apoptosis bypass with cancer risk",
+      "description": "Loss of p53 prevents apoptosis/senescence but is severely oncogenic",
+      "intervention_match": {
+        "target_gene": "TP53"
+      },
+      "hallmark_deltas": {
+        "cellular_senescence": -0.4,
+        "genomic_instability": 0.6
+      },
+      "confidence": 0.95,
+      "sources": [
+        "PMID:15520276"
+      ]
+    },
+    {
+      "id": "RULE-015",
+      "name": "TFAM overexpression improves mitochondrial biogenesis",
+      "description": "TFAM drives mtDNA replication and transcription, rescuing age-related decline",
+      "intervention_match": {
+        "target_gene": "TFAM"
+      },
+      "hallmark_deltas": {
+        "mitochondrial_dysfunction": -0.35
+      },
+      "confidence": 0.7,
+      "sources": [
+        "PMID:27065099"
+      ]
+    },
+    {
+      "id": "RULE-016",
+      "name": "\u03b1KG modulates epigenetic landscape via TET enzymes",
+      "description": "Alpha-ketoglutarate is a cofactor for TET demethylases, promoting DNA demethylation",
+      "intervention_match": {
+        "id": "INT-016"
+      },
+      "hallmark_deltas": {
+        "epigenetic_alterations": -0.25,
+        "deregulated_nutrient_sensing": -0.15
+      },
+      "confidence": 0.65,
+      "sources": [
+        "PMID:24828042",
+        "PMID:32877690"
+      ]
+    }
+  ]
+}
