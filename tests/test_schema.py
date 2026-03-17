@@ -17,7 +17,7 @@ def test_ontology_loads():
     """Ontology JSON loads and validates against schema."""
     raw = json.loads(ONTOLOGY_PATH.read_text())
     ontology = InterventionOntology(**raw)
-    assert len(ontology.interventions) >= 25
+    assert len(ontology.interventions) >= 100
 
 
 def test_intervention_lookup():

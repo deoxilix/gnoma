@@ -11,7 +11,7 @@ ONTOLOGY_PATH = Path(__file__).parent.parent / "data" / "interventions" / "ontol
 
 def test_load_from_json():
     space = InterventionSpace.from_json(ONTOLOGY_PATH)
-    assert len(space) == 25
+    assert len(space) >= 100
 
 
 def test_mask_blocks_oncogenic():

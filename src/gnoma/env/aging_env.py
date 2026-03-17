@@ -84,9 +84,7 @@ class AgingEnv(gym.Env):
 
         # Gymnasium spaces
         self.action_space = spaces.Discrete(n_int)
-        self.observation_space = spaces.Box(
-            low=-np.inf, high=np.inf, shape=(obs_dim,), dtype=np.float32
-        )
+        self.observation_space = spaces.Box(low=-np.inf, high=np.inf, shape=(obs_dim,), dtype=np.float32)
 
         # Episode state
         self._state: Optional[np.ndarray] = None
@@ -99,20 +97,18 @@ class AgingEnv(gym.Env):
     def _build_obs(self) -> np.ndarray:
         """Build observation vector from current state."""
         hallmarks = self.hallmark_scorer.score_hallmarks(self._state)
-        hallmark_vec = np.array(
-            [hallmarks[k] for k in sorted(hallmarks.keys())], dtype=np.float32
+        hallmark_vec = np.array([hallmarks[k] for k in sorted(hallmarks.keys())], dtype=np.float32)
+        obs = np.concatenate(
+            [
+                self._state.astype(np.float32),
+                hallmark_vec,
+                np.array([self._current_age], dtype=np.float32),
+                np.array([self._step_count / self.config.max_steps], dtype=np.float32),
+            ]
         )
-        obs = np.concatenate([
-            self._state.astype(np.float32),
-            hallmark_vec,
-            np.array([self._current_age], dtype=np.float32),
-            np.array([self._step_count / self.config.max_steps], dtype=np.float32),
-        ])
         return obs
 
-    def reset(
-        self, *, seed: int | None = None, options: dict | None = None
-    ) -> tuple[np.ndarray, dict]:
+    def reset(self, *, seed: int | None = None, options: dict | None = None) -> tuple[np.ndarray, dict]:
         """Reset environment by sampling a new aged cell."""
         super().reset(seed=seed)
 
@@ -121,9 +117,7 @@ class AgingEnv(gym.Env):
 
         # Sample a cell within the target age range
         age_min, age_max = self.config.initial_age_range
-        eligible = np.where(
-            (self.cell_ages >= age_min) & (self.cell_ages <= age_max)
-        )[0]
+        eligible = np.where((self.cell_ages >= age_min) & (self.cell_ages <= age_max))[0]
 
         if len(eligible) == 0:
             eligible = np.arange(len(self.cell_states))

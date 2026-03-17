@@ -176,12 +176,7 @@ class RewardFunction:
 
         is_safe, reason = self.safety_check(hallmark_scores, intervention_info)
 
-        total = (
-            c.w_rejuvenation * r_rej
-            + c.w_identity * r_id
-            + c.w_viability * r_via
-            - c.w_uncertainty * r_unc
-        )
+        total = c.w_rejuvenation * r_rej + c.w_identity * r_id + c.w_viability * r_via - c.w_uncertainty * r_unc
 
         if not is_safe:
             total += c.oncogenic_penalty

@@ -48,11 +48,13 @@ class TransitionNetwork(nn.Module):
         layers = []
         prev_dim = input_dim
         for _ in range(config.n_layers):
-            layers.extend([
-                nn.Linear(prev_dim, config.hidden_dim),
-                nn.ReLU(),
-                nn.Dropout(config.dropout),
-            ])
+            layers.extend(
+                [
+                    nn.Linear(prev_dim, config.hidden_dim),
+                    nn.ReLU(),
+                    nn.Dropout(config.dropout),
+                ]
+            )
             prev_dim = config.hidden_dim
 
         # Predicted state delta
@@ -62,9 +64,7 @@ class TransitionNetwork(nn.Module):
         # Aleatoric uncertainty head (log variance)
         self.log_var_head = nn.Linear(config.hidden_dim, config.latent_dim)
 
-    def forward(
-        self, state: torch.Tensor, intervention_emb: torch.Tensor
-    ) -> tuple[torch.Tensor, torch.Tensor]:
+    def forward(self, state: torch.Tensor, intervention_emb: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
         """Predict state delta and aleatoric uncertainty.
 
         Args:

@@ -145,9 +145,7 @@ def rank_candidates(
                 }
             intervention_stats[name]["count"] += 1
             if i < len(result.reward_components):
-                intervention_stats[name]["rewards"].append(
-                    result.reward_components[i].get("total", 0)
-                )
+                intervention_stats[name]["rewards"].append(result.reward_components[i].get("total", 0))
 
     # Rank by frequency * mean reward
     ranked = []
@@ -155,13 +153,15 @@ def rank_candidates(
         avg_reward = float(np.mean(stats["rewards"])) if stats["rewards"] else 0.0
         score = stats["count"] * max(avg_reward, 0)
 
-        ranked.append({
-            "name": name,
-            "count": stats["count"],
-            "avg_reward": avg_reward,
-            "score": score,
-            "literature_validated": any(k in name.lower() for k in known),
-        })
+        ranked.append(
+            {
+                "name": name,
+                "count": stats["count"],
+                "avg_reward": avg_reward,
+                "score": score,
+                "literature_validated": any(k in name.lower() for k in known),
+            }
+        )
 
     ranked.sort(key=lambda x: x["score"], reverse=True)
 

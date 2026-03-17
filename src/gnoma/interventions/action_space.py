@@ -46,9 +46,7 @@ class InterventionSpace:
         self._static_mask = self._compute_static_mask()
 
         # Initialize embeddings (random for now; will be learned or replaced)
-        self._embeddings = self._rng.randn(len(self.interventions), embedding_dim).astype(
-            np.float32
-        )
+        self._embeddings = self._rng.randn(len(self.interventions), embedding_dim).astype(np.float32)
 
     def __len__(self) -> int:
         return len(self.interventions)

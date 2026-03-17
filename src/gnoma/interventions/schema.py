@@ -48,12 +48,8 @@ class Intervention(BaseModel):
     id: str = Field(description="Unique intervention identifier, e.g. 'INT-001'")
     name: str = Field(description="Human-readable name")
     type: InterventionType
-    target_gene: Optional[str] = Field(
-        default=None, description="Primary target gene symbol (HGNC)"
-    )
-    target_pathway: Optional[str] = Field(
-        default=None, description="Primary affected pathway"
-    )
+    target_gene: Optional[str] = Field(default=None, description="Primary target gene symbol (HGNC)")
+    target_pathway: Optional[str] = Field(default=None, description="Primary affected pathway")
     mechanism: str = Field(description="Brief description of molecular mechanism")
     known_aging_effect: Optional[str] = Field(
         default=None, description="Known effect on aging phenotypes from literature"

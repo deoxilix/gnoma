@@ -107,9 +107,7 @@ class HallmarkScorer:
         self.hallmark_names = hallmark_names
         self.input_dim = input_dim
         self.config = config or HallmarkConfig()
-        self.heads: dict[str, HallmarkHead] = {
-            name: HallmarkHead(input_dim, self.config) for name in hallmark_names
-        }
+        self.heads: dict[str, HallmarkHead] = {name: HallmarkHead(input_dim, self.config) for name in hallmark_names}
 
     def score_hallmarks(self, latent_state: np.ndarray) -> dict[str, float]:
         """Score all hallmarks for a single latent state vector.

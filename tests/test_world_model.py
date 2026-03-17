@@ -23,9 +23,7 @@ def test_transition_network_forward():
 
 
 def test_hybrid_world_model_step():
-    config = TransitionConfig(
-        latent_dim=32, intervention_embed_dim=16, hidden_dim=64, mc_samples=5
-    )
+    config = TransitionConfig(latent_dim=32, intervention_embed_dim=16, hidden_dim=64, mc_samples=5)
     net = TransitionNetwork(config)
     model = HybridWorldModel(net, config=config)
 
