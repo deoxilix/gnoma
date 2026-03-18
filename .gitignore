@@ -36,6 +36,12 @@ Thumbs.db
 # Jupyter
 .ipynb_checkpoints/
 
+# Internal docs (not for public repo)
+agents.md
+CLAUDE.md
+engineering-spec.md
+rev_aging_learner_rl_agent.pdf
+
 # Secrets
 .env
 *.key

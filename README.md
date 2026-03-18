@@ -1,6 +1,6 @@
 # gnoma
 
-**Autonomous discovery of anti-aging interventions using reinforcement learning and biologically grounded world models.**
+**Autonomous discovery of reverse-aging interventions using reinforcement learning and biologically grounded world models.**
 
 gnoma is a research-grade computational pipeline that uses single-cell transcriptomics, a hybrid world model, and reinforcement learning to discover and rank molecular interventions for cellular rejuvenation. It learns from real human cell data (CZI cellxgene-census, 61M+ cells), simulates intervention effects using a combination of curated biological rules and a neural transition model trained on CRISPR perturbation data, and outputs ranked, literature-validated intervention candidates.
 
@@ -184,7 +184,7 @@ If you use gnoma in your research, please cite:
 
 ```bibtex
 @software{gnoma2026,
-  title={gnoma: Autonomous Discovery of Anti-Aging Interventions via Reinforcement Learning},
+  title={gnoma: Autonomous Discovery of Reverse-Aging Interventions via Reinforcement Learning},
   year={2026},
   url={https://github.com/deoxilix/gnoma}
 }
