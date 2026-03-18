@@ -1,0 +1,31 @@
+{
+  "summary": {
+    "n_episodes": 50,
+    "mean_total_reward": -0.13251025831885635,
+    "mean_age_delta_years": 8.662782287597656,
+    "safety_trigger_rate": 0.0,
+    "early_termination_rate": 0.0
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "name": "Senolytics \u2014 Piperlongumine",
+      "frequency": 12,
+      "avg_reward": 0.12089368502298992,
+      "confidence": 0.24,
+      "literature_validated": false
+    },
+    {
+      "rank": 2,
+      "name": "FOXO3 overexpression",
+      "frequency": 488,
+      "avg_reward": -0.016549666262743228,
+      "confidence": 1.0,
+      "literature_validated": false
+    }
+  ],
+  "literature_overlap": {
+    "n_validated_in_top_k": 0,
+    "top_k": 2
+  }
+}

@@ -25,13 +25,23 @@ class EvalConfig:
     top_k_candidates: int = 10
     known_interventions: list[str] = field(
         default_factory=lambda: [
-            "Rapamycin",
-            "Metformin",
-            "NMN",
-            "Dasatinib + Quercetin",
-            "Partial reprogramming",
-            "Spermidine",
-            "Fisetin",
+            # Drugs / small molecules
+            "rapamycin", "mtor", "metformin", "ampk",
+            "nmn", "nad+", "nicotinamide",
+            "dasatinib", "quercetin", "senolytic",
+            "spermidine", "fisetin", "navitoclax",
+            "resveratrol", "sirt",
+            # Gene targets
+            "foxo3", "klotho", "telomerase", "tert",
+            "tfeb", "autophagy",
+            "p16", "cdkn2a", "senescence",
+            "pgc-1", "ppargc1a", "mitochond",
+            "nrf2", "nfe2l2",
+            # Reprogramming
+            "reprogramming", "oskm", "yamanaka",
+            "oct4", "pou5f1", "sox2", "klf4", "myc",
+            # Epigenetic
+            "dnmt", "ezh2", "hdac", "tet2",
         ]
     )
 

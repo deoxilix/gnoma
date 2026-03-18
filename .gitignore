@@ -10,10 +10,16 @@ build/
 .venv/
 venv/
 
-# Data (tracked via DVC)
+# Data (large files — tracked via DVC)
 data/raw/
 data/processed/
+data/latent/
+data/perturbseq/
+data/dataset_inventory.csv
 checkpoints/
+
+# Trained models (large binaries)
+models/
 
 # Experiment tracking
 wandb/

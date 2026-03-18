@@ -1,0 +1,175 @@
+{
+  "summary": {
+    "n_episodes": 200,
+    "mean_total_reward": 0.0915922520463355,
+    "mean_age_delta_years": 2.680342617034912,
+    "safety_trigger_rate": 0.0,
+    "early_termination_rate": 0.0
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "name": "TFEB overexpression",
+      "frequency": 545,
+      "avg_reward": 0.025823301097053455,
+      "confidence": 1.0,
+      "literature_validated": true
+    },
+    {
+      "rank": 2,
+      "name": "Taurine supplementation",
+      "frequency": 288,
+      "avg_reward": 0.021753605103327172,
+      "confidence": 1.0,
+      "literature_validated": false
+    },
+    {
+      "rank": 3,
+      "name": "OSK partial reprogramming (Myc-free)",
+      "frequency": 194,
+      "avg_reward": 0.021337992310063125,
+      "confidence": 0.97,
+      "literature_validated": true
+    },
+    {
+      "rank": 4,
+      "name": "ISRIB (ISR inhibitor / proteostasis)",
+      "frequency": 71,
+      "avg_reward": 0.035533479448985036,
+      "confidence": 0.355,
+      "literature_validated": false
+    },
+    {
+      "rank": 5,
+      "name": "Chaetocin (SUV39H1 inhibitor / H3K9me3 modulator)",
+      "frequency": 100,
+      "avg_reward": 0.020484272547066213,
+      "confidence": 0.5,
+      "literature_validated": false
+    },
+    {
+      "rank": 6,
+      "name": "TFAM overexpression",
+      "frequency": 49,
+      "avg_reward": 0.035740134728198154,
+      "confidence": 0.245,
+      "literature_validated": false
+    },
+    {
+      "rank": 7,
+      "name": "JQ1 (BET bromodomain inhibitor)",
+      "frequency": 52,
+      "avg_reward": 0.030517773503939125,
+      "confidence": 0.26,
+      "literature_validated": false
+    },
+    {
+      "rank": 8,
+      "name": "DNMT inhibitor \u2014 5-Azacytidine (decitabine)",
+      "frequency": 38,
+      "avg_reward": 0.030990221645486978,
+      "confidence": 0.19,
+      "literature_validated": true
+    },
+    {
+      "rank": 9,
+      "name": "FOXO3 overexpression",
+      "frequency": 6,
+      "avg_reward": 0.15733162562052408,
+      "confidence": 0.03,
+      "literature_validated": true
+    },
+    {
+      "rank": 10,
+      "name": "Acarbose (alpha-glucosidase inhibitor / CR mimetic)",
+      "frequency": 30,
+      "avg_reward": 0.02318166077136994,
+      "confidence": 0.15,
+      "literature_validated": false
+    },
+    {
+      "rank": 11,
+      "name": "Oxytocin supplementation",
+      "frequency": 4,
+      "avg_reward": 0.14262821525335315,
+      "confidence": 0.02,
+      "literature_validated": false
+    },
+    {
+      "rank": 12,
+      "name": "Plasma dilution / therapeutic apheresis",
+      "frequency": 1,
+      "avg_reward": 0.5051071166992188,
+      "confidence": 0.005,
+      "literature_validated": false
+    },
+    {
+      "rank": 13,
+      "name": "Quercetin alone (senolytic / antioxidant)",
+      "frequency": 1,
+      "avg_reward": 0.41590766906738286,
+      "confidence": 0.005,
+      "literature_validated": true
+    },
+    {
+      "rank": 14,
+      "name": "EZH2 knockdown",
+      "frequency": 30,
+      "avg_reward": 0.012663650289177894,
+      "confidence": 0.15,
+      "literature_validated": true
+    },
+    {
+      "rank": 15,
+      "name": "Luteolin (senolytic / anti-SASP flavonoid)",
+      "frequency": 6,
+      "avg_reward": 0.0584930419921875,
+      "confidence": 0.03,
+      "literature_validated": true
+    },
+    {
+      "rank": 16,
+      "name": "Tazemetostat (EZH2 inhibitor)",
+      "frequency": 3,
+      "avg_reward": 0.07056647092103958,
+      "confidence": 0.015,
+      "literature_validated": true
+    },
+    {
+      "rank": 17,
+      "name": "PPARGC1A / PGC-1\u03b1 overexpression",
+      "frequency": 1,
+      "avg_reward": 0.19696712493896484,
+      "confidence": 0.005,
+      "literature_validated": true
+    },
+    {
+      "rank": 18,
+      "name": "SIRT1 overexpression",
+      "frequency": 2,
+      "avg_reward": 0.07757927626371383,
+      "confidence": 0.01,
+      "literature_validated": true
+    },
+    {
+      "rank": 19,
+      "name": "Young plasma / heterochronic parabiosis factors",
+      "frequency": 2,
+      "avg_reward": 0.03168315887451172,
+      "confidence": 0.01,
+      "literature_validated": false
+    },
+    {
+      "rank": 20,
+      "name": "IL1B knockdown (SASP suppression)",
+      "frequency": 1,
+      "avg_reward": 0.045961761474609376,
+      "confidence": 0.005,
+      "literature_validated": false
+    }
+  ],
+  "literature_overlap": {
+    "n_validated_in_top_k": 10,
+    "top_k": 20
+  }
+}

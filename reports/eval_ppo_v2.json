@@ -1,0 +1,23 @@
+{
+  "summary": {
+    "n_episodes": 50,
+    "mean_total_reward": 0.27037150893211365,
+    "mean_age_delta_years": 5.564717521667481,
+    "safety_trigger_rate": 0.0,
+    "early_termination_rate": 0.0
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "name": "TFEB overexpression",
+      "frequency": 500,
+      "avg_reward": 0.02703715089321137,
+      "confidence": 1.0,
+      "literature_validated": false
+    }
+  ],
+  "literature_overlap": {
+    "n_validated_in_top_k": 0,
+    "top_k": 1
+  }
+}
